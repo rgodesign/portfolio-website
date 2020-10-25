@@ -11,11 +11,11 @@ img {
   width: 100%
 }
 
-#topnav {
+.topnav {
   background-color: #2b2b2b;
 }
 
-#contact {
+.contact {
   background-color: #2b2b2b;
   color: #FFFFFF;
 }
@@ -56,21 +56,22 @@ a:active {
 
 .button {
   display: inline-block;
-  color: #FFFFFF;
   background-color: #4096FF;
   padding: 10px;
-  border-radius: 3px;
-  transition: 0.2s;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+#works .button {
+  color: #FFFFFF;
 }
 
 .button:hover {
+  color: #FFFFFF;
   background-color: #9E99FF;
 }
 
 .button:active {
+  color: #FFFFFF;
   background-color: #9E99FF;
 }
-
-/* Figure out the button, experiment with line spacing and text weights, logo image.
-Anything else to do with links?
-*/
