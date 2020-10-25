@@ -60,6 +60,7 @@ a:active {
   padding: 10px;
   border-radius: 4px;
   transition: 0.3s;
+  color: #FFFFFF;
 }
 
 #works .button {
