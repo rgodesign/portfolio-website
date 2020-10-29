@@ -12,14 +12,14 @@
 </head>
 
 <body id="gameshelf">
-  <header>
-    <!-- Header/Navigation -->
-    <div class="topnav">
-      <a href="home.html">
-        <img src="https://via.placeholder.com/150x50?text=Rob-Owens" alt="Rob Owens">
+
+  <header><!-- Header/Navigation -->
+    <div class="container">
+      <a href="index.html">
+        <img src="img/s-rob-logo.png" alt="Rob Owens" class="logo">
       </a>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -31,7 +31,7 @@
 <main>
 
 <div><!-- Summary section-->
-  <div><!-- Container -->
+  <div class="container"><!-- Container -->
     <h1>GameShelf</h1>
     <picture>
       <source srcset="img/s-gameshelf.png" media="(max-width:767px)">
@@ -44,7 +44,7 @@
 </div>
 
 <div><!-- Process section -->
-  <div><!-- Container -->
+  <div class="container"><!-- Container -->
     <h1>Process</h1>
 
     <div><!-- Part 1 Research -->
@@ -89,10 +89,10 @@
     </div><!-- End part 3 -->
 
     <div><!-- Part 4 Prototype -->
-      <picture>
-        <source srcset="https://via.placeholder.com/600x400?text=Video-Placeholder" media="(max-width:767px)">
-        <img src="https://via.placeholder.com/1200x800?text=Video-Placeholder" alt="GameShelf animated prototype">
-      </picture>
+      <video controls>
+        <source src="img/gameshelf/game-anim.mp4" type="video/mp4">
+      Your browser does not support the video.
+      </video>
       <h3>Prototype</h3>
       <p>
       GameShelf was prototyped in InVision and tested by designers and potential users for feedback. Some screens were animated in Flinto as a mockup of what it would look like fully implemented.
@@ -103,7 +103,7 @@
 </div><!-- End process section -->
 
 <div><!-- Conclusion section -->
-  <div><!-- Container -->
+  <div class="container"><!-- Container -->
     <h1>Conclusion</h1>
     <p>
     GameShelf was received well as a design, with only minor changes made in iteration. Time constraints limited the features, but multiple testers expressed an interest in the implementation of social features in future versions.
@@ -114,30 +114,30 @@
 </main>
 
 <!-- Footer -->
-  <footer class="contact">
-    <div>
+  <footer>
+    <div class="container">
       <h2>Get in touch</h2>
       <p>Contact me if you're interested in working together.</p>
       <div>
         <a href="mailto:rob@rgodesign.com">Email me</a>
       </div>
-      <div><!-- Social media links -->
+      <div class="social"><!-- Social media links -->
         <ul>
           <li><a href="https://www.linkedin.com/in/rob-owens-4a69a353" target="_blank">
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
           </a></li>
           <li><a href="https://www.behance.net/rgodesign" target="_blank">
-            <i class="fab fa-behance-square"></i>
+            <i class="fab fa-behance-square fa-2x"></i>
           </a></li>
           <li><a href="https://dribbble.com/RGOdesign" target="_blank">
-            <i class="fab fa-dribbble-square"></i>
+            <i class="fab fa-dribbble-square fa-2x"></i>
           </a></li>
           <li><a href="https://twitter.com/RGOdesign" target="_blank">
-            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
           </a></li>
         </ul>
       </div>
-      <p>Copyright Rob Owens 2020</p>
+      <p class="copyright">Copyright Rob Owens 2020</p>
     </div>
   </footer>
 </body>

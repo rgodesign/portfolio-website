@@ -12,14 +12,14 @@
 </head>
 
 <body id="index">
-  <header>
-    <!-- Header/Navigation -->
-    <div class="topnav">
-      <a href="home.html">
-        <img src="https://via.placeholder.com/150x50?text=Rob-Owens" alt="Rob Owens">
+
+  <header><!-- Header/Navigation -->
+    <div class="container">
+      <a href="index.html">
+        <img src="img/s-rob-logo.png" alt="Rob Owens" class="logo">
       </a>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -29,17 +29,18 @@
   </header>
 
 <main>
-  <div><!--Hero section -->
-    <div id="hero">
+  <div id="hero"><!--Hero section -->
+    <div class="container">
       <h1>Hi, I'm Rob.</h1>
       <span>I'm a UI designer with a background in psychology.</span>
     </div>
   </div>
 
-  <div id="works"><!-- Work/Projects -->
+<div id="work"><!-- Work/Projects -->
+  <div class="container">
     <h2>Works</h2>
     <!-- First Project -->
-    <div><!-- row -->
+    <div class="row"><!-- row -->
     <div><!-- first column -->
       <picture>
         <source srcset="img/s-gameshelf.png" media="(max-width:767px)">
@@ -56,7 +57,7 @@
     </div>
 
     <!-- Second Project -->
-    <div><!-- row -->
+    <div class="row"><!-- row -->
     <div><!-- first column -->
       <picture>
         <source srcset="img/s-flexipes.png" media="(max-width:767px)">
@@ -73,7 +74,7 @@
     </div>
 
     <!-- Third Project -->
-    <div><!-- row -->
+    <div class="row"><!-- row -->
     <div><!-- first column -->
       <picture>
         <source srcset="img/s-petsome.png" media="(max-width:767px)">
@@ -90,33 +91,34 @@
     </div>
 
   </div>
+</div>
 </main>
 
 <!-- Footer -->
-  <footer class="contact">
-    <div>
+  <footer>
+    <div class="container">
       <h2>Get in touch</h2>
       <p>Contact me if you're interested in working together.</p>
       <div>
         <a href="mailto:rob@rgodesign.com">Email me</a>
       </div>
-      <div><!-- Social media links -->
+      <div class="social"><!-- Social media links -->
         <ul>
           <li><a href="https://www.linkedin.com/in/rob-owens-4a69a353" target="_blank">
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
           </a></li>
           <li><a href="https://www.behance.net/rgodesign" target="_blank">
-            <i class="fab fa-behance-square"></i>
+            <i class="fab fa-behance-square fa-2x"></i>
           </a></li>
           <li><a href="https://dribbble.com/RGOdesign" target="_blank">
-            <i class="fab fa-dribbble-square"></i>
+            <i class="fab fa-dribbble-square fa-2x"></i>
           </a></li>
           <li><a href="https://twitter.com/RGOdesign" target="_blank">
-            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
           </a></li>
         </ul>
       </div>
-      <p>Copyright Rob Owens 2020</p>
+      <p class="copyright">Copyright Rob Owens 2020</p>
     </div>
   </footer>
 </body>
