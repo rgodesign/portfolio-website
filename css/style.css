@@ -32,6 +32,7 @@ footer {
   background-color: #2b2b2b;
   color: #FFFFFF;
   padding: 10px 0;
+  text-align: center;
 }
 
 video {
@@ -67,6 +68,7 @@ p {
 a {
   color: #4096FF;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:visited {
@@ -97,7 +99,7 @@ a:active {
   background-color: #9E99FF;
 }
 
-.button:active, a.button:hover {
+.button:active, a.button:active {
   color: #FFFFFF;
   background-color: #9E99FF;
   text-decoration: underline;
@@ -167,4 +169,127 @@ main {
   display: inline-block;
   width: 100%;
   margin: 20px 0 0 0;
+}
+
+/* CSS ANIMATION */
+
+
+/* ==========================
+Medium devices (640px and larger)
+============================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    margin-top: 5px;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 5px 0 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==========================
+Large devices (1024px and larger)
+============================= */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px 0 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==========================
+Extra large devices (1440px and larger)
+============================= */
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 15px 0 15px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
