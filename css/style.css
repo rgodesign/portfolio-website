@@ -26,6 +26,7 @@ header {
   padding: 10px 0 0 0;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 footer {
@@ -53,7 +54,7 @@ h1 {
 }
 h2 {
   font-size: 2em;
-  margin: 20px 0 5px 0;
+  margin: 10px 0 5px 0;
 }
 h3 {
   font-size: 1.5em;
@@ -61,7 +62,12 @@ h3 {
 }
 
 p {
-  margin: 10px 0 10px 0;
+  margin: 8px 0 10px 0;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
 }
 
 /* Links & Buttons */
@@ -105,13 +111,18 @@ a:active {
   text-decoration: underline;
 }
 
+.project-image:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
 /* Layout syling */
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .row {
-  margin: 25px 0;
+  margin: 10px 0 40px 0;
 }
 
 /* Navigation */
@@ -172,7 +183,22 @@ main {
 }
 
 /* CSS ANIMATION */
+@keyframes sample-animation {
+  0% {transform: translate(0,0);}
+  25% {transform: translate(0,5px);}
+  50% {transform: translate(0,-20px);}
+  75% {transform: translate(0,-10px);}
+  100% {transform: translate(0,-30px);}
+}
 
+.animation-object {
+  animation-duration: 4s;
+  animation-name: sample-animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+}
 
 /* ==========================
 Medium devices (640px and larger)
@@ -196,10 +222,10 @@ Medium devices (640px and larger)
     font-size: 16px;
   }
 
-  .container {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  #image-resize {
+    max-width: 700px;
+    height: auto;
+    margin: auto;
   }
 
   h3 {
@@ -218,8 +244,16 @@ Medium devices (640px and larger)
     display: block;
   }
 
+  .container {
+    padding: 0 50px;
+  }
+
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-3 {
+    width: 25%;
   }
 
   [class*="col-"] {
@@ -243,7 +277,7 @@ Large devices (1024px and larger)
   }
 
   .container {
-    max-width: 950px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -272,10 +306,6 @@ Large devices (1024px and larger)
 Extra large devices (1440px and larger)
 ============================= */
 @media only screen and (min-width: 1440px) {
-  body {
-    font-size: 20px;
-  }
-
   .container {
     max-width: 1200px;
     margin-left: auto;
