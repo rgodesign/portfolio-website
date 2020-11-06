@@ -182,24 +182,6 @@ main {
   margin: 20px 0 0 0;
 }
 
-/* CSS ANIMATION */
-@keyframes sample-animation {
-  0% {transform: translate(0,0);}
-  25% {transform: translate(0,5px);}
-  50% {transform: translate(0,-20px);}
-  75% {transform: translate(0,-10px);}
-  100% {transform: translate(0,-30px);}
-}
-
-.animation-object {
-  animation-duration: 4s;
-  animation-name: sample-animation;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in;
-  transform-origin: center;
-}
-
 /* ==========================
 Medium devices (640px and larger)
 ============================= */
@@ -294,12 +276,6 @@ Large devices (1024px and larger)
     float: left;
     padding: 0 10px 0 10px;
   }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 }
 
 /* ==========================
@@ -315,11 +291,5 @@ Extra large devices (1440px and larger)
   [class*="col-"] {
     float: left;
     padding: 0 15px 0 15px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
   }
 }
